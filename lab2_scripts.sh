@@ -19,9 +19,11 @@ grep -E "$uRegEx" "$fileName"
 #Problem 3 Code:
 #Hardcoded grep commands
 #1. Count number of phone numbers in regex_practice.txt
+echo "Number of phones:"
 grep -E -c "^[0-9]{3}-[0-9]{3}-[0-9]{4}$" "regex_practice.txt"
 
 #2. count the number of emails in regex_practice.txt
+echo "Number of emails:"
 grep -E -c "\b[0-9a-zA-Z]+@[A-Za-z]+\.[A-Za-z]+" "regex_practice.txt"
 
 #3. list all of the phone numbers in the 303 area code & store results in phone_results.txt
